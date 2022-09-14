@@ -1,0 +1,295 @@
+:root .baroque{
+    --white: rgb(255, 248, 231);
+    --superlight: rgb(237,201,175);
+    --superlight-hover:  #7cb9e8;
+    --light: rgb(160, 160, 227);
+    --middle: rgb(90,60,50);
+}
+
+.baroque .main {
+    background-color: var(--white);
+}
+
+/* POST */
+.baroque .post {
+    /* flex-box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 50%;
+    /* sizing */
+    height: 38vh;
+    overflow-y: hidden;
+    padding: 2rem;
+    /* style */
+    background-color: var(--white);
+    /* border-top: black solid 1px; */
+    /* border-left: black solid 2px; */
+}
+
+.baroque .post:hover{
+    /* padding: 3rem; */
+    border: var(--superlight) solid 2px;
+
+}
+
+.baroque .post:nth-of-type(2) {
+    padding: 3rem;
+    overflow-x: hidden;
+}
+
+/* POST H1 */
+.baroque .post h1{
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+    letter-spacing: .35em;
+    word-spacing: .4em;
+    font-size: .8em;
+}
+
+.baroque .post:nth-of-type(2) h1{
+    writing-mode:vertical-rl;
+    top: 15%;
+    right: 50%;
+    letter-spacing: .15em;
+    word-spacing: .3em;
+    font-size: 2.2em;
+    font-weight: normal;
+}
+
+.baroque .post:nth-of-type(3) h1{
+    top: 25%;
+    letter-spacing: .2em;
+    word-spacing: .3em;
+    font-size: 1.7em;
+    color: var(--middle);
+
+}
+
+/* POST P */
+.baroque .post p{
+    margin-right: 4.5%;
+    color: var(--medium);
+    letter-spacing: .2em;
+    font-size: .6em;
+
+    font-weight: bold;
+}
+
+.baroque .post:nth-of-type(2) p{
+    writing-mode:vertical-rl;
+    font-weight: default;
+}
+
+.baroque .post:nth-of-type(3) p{
+    margin-right: 7%;
+    font-weight: default;
+}
+
+/* POST TAGS */
+.baroque .post .tags {
+    display: flex;
+    position: absolute;
+
+    justify-content: start;
+    top: 73%;
+    left: 15%;
+    width: 80%;
+}
+
+.baroque .post:nth-of-type(2) .tags {
+    /* flex-box */
+    justify-content: center;
+    /* position */
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    /* sizing */
+    width: 30%;
+}
+
+.baroque .post:nth-of-type(3) .tags {
+    /* flex-box */
+    justify-content: end;
+    /* position */
+    top: 80%;
+    left: 15%;
+}
+
+/* POST KEYIMG */
+
+.baroque .post img.keyImg{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.baroque .post:nth-of-type(2) img.keyImg{
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    display: none;
+}
+
+.baroque .post:nth-of-type(3) img.keyImg{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: none;
+}
+
+/* POST BACKIMG */
+
+.baroque .post img.backImg{
+    display: none;
+}
+
+.baroque .post:nth-of-type(2) img.backImg{
+    display: block;
+    /* position */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* sizing */
+    height: 100%;
+    /* style */
+    margin: 0px;   
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(190,0,50));
+}
+
+/* POST IMGDIV */
+
+.baroque .post .image-div{
+    position: absolute;
+    top: 15%; 
+    right: 18%;
+    width: 22%; 
+    aspect-ratio: 1 / 1;
+}
+
+.baroque .post:nth-of-type(2) .image-div{
+
+    display: block;
+    /* position */
+    position: absolute;
+    top: -50%;
+    left: 41%;
+    /* sizing */
+    height: 150%;
+    width: 80%;
+    /* style */
+    margin: 0px;   
+    /* top: -1%;
+    right: 0%;
+    width: 80%;
+    height: 102%; */
+}
+
+/* POST GRADIENT */
+
+.baroque .post .gradient{
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background: linear-gradient(to right, rgba(255, 248, 231, .85), rgba(225, 225, 225, 0));
+    width: 100%;
+    height: 100%;
+}
+
+/* ICONS */
+
+.baroque .icons{
+    display: block;
+    position: absolute;
+    top: 75%;
+
+    align-self: end;
+    left: 80%;
+}
+
+.baroque .post:nth-of-type(2) .icons {
+    left: 10%;
+    align-self: start;
+}
+
+.baroque .post:nth-of-type(3) .icons {
+    left: 10%;
+    align-self: start;
+}
+
+/* SPAN */
+
+.baroque span{
+    color: var(--medium);
+    margin-right: 2px;
+    font-size: .95em;
+}
+
+
+/* BUTTON */
+.baroque .post button{
+    display: none;
+} 
+
+/* .baroque input[type="submit"]{
+    margin-right: 2vw;
+    border: solid black 2px;
+    border-radius: 0px;
+    background-color:  rgba(0, 0, 0, 0);
+    color: black;
+    padding: .1em;
+    font-size: .2em;
+    box-sizing: border-box;
+} */
+
+.baroque .post button:hover{
+    border-radius: 0px;
+    background-color:  var(--super-light-hover);
+    cursor: pointer;
+}
+
+.baroque #issue{
+    display: none;
+}
+
+.baroque #issueMain{
+    position: relative;
+    flex-basis: 2%;
+}
+
+.baroque #single-view{
+    position: relative;
+    display: none;
+    flex-basis: 80%;
+    /* background-color:rgb(160, 160, 227); */
+    flex-direction: column;
+    /* align-content: stretch; */
+    /* flex-wrap: wrap; */
+    /* height: 40vh; */
+}
+
+.baroque .single-view-posts{
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.baroque #single-view-header{
+    top: 10vh;
+    height: 5vh;
+}
+
+.baroque #single-article{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(160, 160, 227);
+}

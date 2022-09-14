@@ -1,0 +1,30 @@
+
+.test{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#one{
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+}
+
+#two{
+    display: flex;
+    justify-content: end;         
+}
+
+#three{
+    display: flex;
+    justify-content: start;         
+}
+
+#four{
+    display: flex;
+    justify-content: start;
+}

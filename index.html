@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Capstone</title>
+        <link rel="stylesheet" href="src/titian.css">
+    </head>
+    <body>
+        <wrapper id="publication">
+            <section class="hero">
+                
+            </section>
+            <section class="not-hero" id="publication-section">
+                <section class="header">
+                    <h1 class="page-title">Yale Publications App</h1>
+                    <input type="text" name="search" class="search" placeholder="search">
+                </section>
+                <nav id="publicationNavbar">
+                    <ul>
+                        <li id="homeNavLink">Home</li>
+                        <li id="newPub-li">New Publication</li>
+                    </ul>
+                    <div id="newPublication">
+                        <input type="text" name="name" id="nameInput" placeholder="Name">
+                        <textArea name="description" id="descriptionInput" placeholder="Description"></textArea>
+                        <input type="submit" id="newPubSubmit" name="submit" value="Create Publication">
+                    </div>
+                    <div id="updatePublication">
+                        <p></p>
+                        <input type="text" name="name" id="updateNameInput" >
+                        <textArea name="description" id="updateDescriptionInput"></textArea>
+                        <input type="submit" id="updatePubSubmit" name="submit" value="Update Publication">
+                    </div>
+                    <div id="deletePublication">
+                        <button id="deleteConfirmation"></button>
+                    </div>
+                </nav>
+                <section class="main" id="publicationMain">
+
+                </section>
+
+
+            </section>
+        </wrapper>
+
+        <wrapper id="issue">
+            <section class="header">
+                <h1 class="page-title">Yale Publications App</h1>
+                <input type="text" name="search" class="search" placeholder="search">
+            </section>
+            <nav id="issueNavbar">
+                <ul>
+                    <li id="backToPubsNavLink">Back to Publications</li>
+                    <li id="newIssueLi">New Issue</li>
+                </ul>
+                <div id="newIssue">
+                    <input type="text" name="name" id="issueNameInput" placeholder="Name">
+                    <textArea name="number" id="issueNumberInput" placeholder="Number"></textArea>
+                    <input type="submit" id="newIssueSubmit" name="submit" value="Create Issue">
+                </div>
+                <div id="updateIssue">
+                    <p></p>
+                    <input type="text" name="name" id="updateIssueNameInput" >
+                    <textArea name="description" id="updateIssueNumberInput"></textArea>
+                    <input type="submit" id="updateIssueSubmit" name="submit" value="Update Issue">
+                </div>
+                <div id="deleteIssue">
+                    <button id="deleteIssueConfirmation"></button>
+                </div>
+            </nav>
+            <section class="main" id="issueMain">
+
+            </section>
+            <section id="single-view">
+                <div class = "header" id="single-view-header">
+                    <h1 class="page-title">Article</h1>
+                    <button class="new-article">New Article</button>
+                    <div id="newArticle">
+                        <input type="text" name="name" id="articleNameInput" placeholder="Name">
+                        <textArea name="description" id="articleContentInput" placeholder="Content"></textArea>
+                        <input type="text" name="file" id="articleFileInput" placeholder="File">
+                        <input type="submit" id="articleSubmit" name="submit" value="Create Article">
+                    </div>
+                    <div id="updateArticle">
+                        <p></p>
+                        <input type="text" name="name" id="updateArticleNameInput" placeholder="Name">
+                        <textArea name="description" id="updateArticleContentInput" placeholder="Content"></textArea>
+                        <input type="text" name="file" id="updateArticleFileInput" placeholder="File">
+                        <input type="submit" id="updateArticleSubmit" name="submit" value="Create Article">
+                    </div>
+                    <div id="deleteArticle">
+                        <button id="deleteArticleConfirmation"></button>
+                    </div>
+                </div>
+                <div id="single-article">
+                    
+                </div>
+                <div class="single-view-posts">
+                
+                </div>
+            </section>
+
+        </wrapper>
+        <script src="src/index.js" defer></script>
+    </body>
+</html>
